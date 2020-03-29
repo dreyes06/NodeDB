@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import StarRating from './StarRating'
 import axios from "axios";
 
 
@@ -33,6 +34,7 @@ class Blog extends Component {
         <h1>{this.props.val.description}</h1>
         <p>{this.props.val.link}</p>
         <p>{this.props.val.handle}</p>
+        <StarRating/>
       </div>
     );
   }

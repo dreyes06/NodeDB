@@ -2,7 +2,7 @@ let blogPost = require('../../post.json')
 let allPost = []
 let myPost= []
 
-let id = 3
+let id = 7
 
 const getPost = (req, res) => {
     allPost.push(blogPost, myPost)

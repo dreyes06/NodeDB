@@ -18,3 +18,13 @@
     align-items: flex-end;
     height: 50px;
 }
+
+input[type='radio'] {
+    display: none
+}
+
+.tag {
+    cursor: pointer;
+    transition: color 200ms;
+    
+}

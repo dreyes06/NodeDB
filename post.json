@@ -1,16 +1,37 @@
 [
     {
         "id": 1,
-        "img": "./server/ServerAssets/harley.jpg",
+        "img": "https://i.imgur.com/auooTSX.jpg",
         "description": "Vintage Harley T-Shirt - Easton K. Denim - Dr.Martens",
         "link": "eastonk.co",
         "handle": "Instagram: @dreyes24"
     },
     {
         "id": 2,
-        "img": "img",
-        "description": "asg",
-        "link": "link",
-        "handle": "handle"
+        "img": "https://i.imgur.com/3TqNHft.jpg",
+        "description": "Urban Outfitters Cargos",
+        "link": "urbanoutfiiters.com",
+        "handle": "Instagram: @mollie"
+    },
+    {
+        "id": 3,
+        "img": "https://i.imgur.com/h3nvoaU.jpg",
+        "description": "UNIQLO U Cardigan x Carhartt WIP Tee",
+        "link": "uniqlo.com",
+        "handle": "Instagram: @dreyes24"
+    },
+    {
+        "id": 4,
+        "img": "https://i.imgur.com/Cv2FoG4.jpg",
+        "description": "10DEEP Crewneck x UNIQLO Denim x Yeezy 350 Boost",
+        "link": "10deep.com",
+        "handle": "Instagram: @jho"
+    },
+    {
+        "id": 6,
+        "img": "https://i.imgur.com/06Pio2N.jpg",
+        "description": "Jordan Fossil IV",
+        "link": "footlocker.com",
+        "handle": "Instagram: @dreyes24"
     }
 ]

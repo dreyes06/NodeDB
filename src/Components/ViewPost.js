@@ -32,7 +32,8 @@ class ViewPost extends Component {
     console.log(this.state.allPost);
     console.log(this.state.allPost)
     let mappedAllPost = this.state.allPost.map((val, index) => {
-      return <Blog val={val} updateBlogPost={this.updateBlogPost} />;
+      console.log(val)
+        return <Blog val={val} updateBlogPost={this.updateBlogPost} />;
     });
     let mappedMyPost = this.state.myPost.map((val, index) => {
       
