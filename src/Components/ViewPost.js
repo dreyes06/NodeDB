@@ -30,14 +30,13 @@ class ViewPost extends Component {
 
   render() {
     console.log(this.state.allPost);
-    //   const {}
     console.log(this.state.allPost)
     let mappedAllPost = this.state.allPost.map((val, index) => {
       return <Blog val={val} updateBlogPost={this.updateBlogPost} />;
     });
     let mappedMyPost = this.state.myPost.map((val, index) => {
       
-        //   <MyPost updateBlogPost={this.updateBlogPost} /> 
+       
         return (
           <div>
           <img src={val.img} alt="product" />
@@ -49,27 +48,14 @@ class ViewPost extends Component {
     });
     return (
       <div>
-        {/* <nav>
-          <button onClick={() => this.setState({ view: "allPost" })}>
-            Public Space
-          </button>
-          <button onClick={() => this.setState({ view: "myPost" })}>
-            My Post
-          </button>
-        </nav> */}
+       
         {this.state.view === "allPost" ? (
-          <>
+          <div>
             <h1>All Post</h1>
             {mappedAllPost}
             {mappedMyPost}
-          </>
-        ) : // this.state.view === 'myPost'
-        // ?
-        // <>
-        // <h1>My Posts</h1>
-        // {mappedMyPost}
-        // </>
-        // :
+          </div>
+        ) : 
         null}
       </div>
     );

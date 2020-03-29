@@ -43,7 +43,6 @@ class MyPost extends Component {
       .put(`/api/blog/${id}`, { description, link, handle })
       .then(response => {
         this.setState({ amendStatus: !this.state.amendStatus, myPost: response.data });
-        // this.props.updateBlogPost(response.data);
       })
       .catch(error => {
         console.log(error);

@@ -1,10 +1,10 @@
 [
     {
         "id": 1,
-        "img": "img",
-        "description": "Aime Leon Dore",
-        "link": "link",
-        "handle": "handle"
+        "img": "./server/ServerAssets/harley.jpg",
+        "description": "Vintage Harley T-Shirt - Easton K. Denim - Dr.Martens",
+        "link": "eastonk.co",
+        "handle": "Instagram: @dreyes24"
     },
     {
         "id": 2,
