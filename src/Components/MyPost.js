@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
+
 class MyPost extends Component {
   constructor() {
     super();
@@ -66,9 +67,9 @@ deletePost = (id)=> {
       <div>
         {this.state.myPost.map(val => {
           return (
-            <div>
-              <img src={val.img} alt="product" />
-              <h1>{val.description}</h1>
+            <div className='blogpost' >
+              <img className='img' src={val.img} alt="product" />
+              <h2>{val.description}</h2>
               <p>{val.link}</p>
               <p>{val.handle}</p>
               <button onClick={this.changeAmendStatus}>Edit</button>
@@ -100,6 +101,7 @@ deletePost = (id)=> {
             </div>
           );
         })}
+        
         
       </div>
     );

@@ -29,9 +29,9 @@ class Blog extends Component {
   render() {
     
     return (
-      <div>
-        <img src={this.props.val.img} alt='product'/>
-        <h1>{this.props.val.description}</h1>
+      <div className='blogpost' >
+        <img className='img' src={this.props.val.img} alt='product'/>
+        <h2>{this.props.val.description}</h2>
         <p>{this.props.val.link}</p>
         <p>{this.props.val.handle}</p>
         <StarRating/>

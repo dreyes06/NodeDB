@@ -29,20 +29,17 @@ class ViewPost extends Component {
   }
 
   render() {
-    console.log(this.state.allPost);
-    console.log(this.state.allPost)
     let mappedAllPost = this.state.allPost.map((val, index) => {
-      console.log(val)
         return <Blog val={val} updateBlogPost={this.updateBlogPost} />;
     });
     let mappedMyPost = this.state.myPost.map((val, index) => {
       
        
         return (
-          <div>
-          <img src={val.img} alt="product" />
-          <h1>{val.description}</h1>
-          <p>{val.link}</p>
+          <div className='blogpost' >
+          <img className='img' src={val.img} alt="product" />
+          <h2>{val.description}</h2>
+          <h3>{val.link}</h3>
           <p>{val.handle}</p>
         </div>
       );
@@ -52,7 +49,7 @@ class ViewPost extends Component {
        
         {this.state.view === "allPost" ? (
           <div>
-            <h1>All Post</h1>
+            
             {mappedAllPost}
             {mappedMyPost}
           </div>

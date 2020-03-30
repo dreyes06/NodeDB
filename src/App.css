@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(245, 239, 227);
+}
+
 .header {
     display: flex;
     justify-content: center;
@@ -6,9 +10,12 @@
 
 .tagged {
     /* width: 30%; */
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 60px;
+    text-decoration: underline mediumaquamarine;
 }
 
 .logo {
@@ -16,7 +23,51 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    height: 50px;
+    height: 60px;
+    
+}
+
+.currentpage{
+    font-size: 30px;
+    width: 20%;
+    display: flex;
+    justify-content: left;
+    margin: zero;
+    font-size: 40px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    
+}
+
+.buttonsnav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.navbuttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: solid;
+    border-color: mediumaquamarine;
+    border-radius: 30px;
+    margin-right: 10px;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    padding-right: 12px;
+
+}
+
+.navbuttons:hover{
+    border: solid;
+    border-color: black;
+    border-radius: 30px;
 }
 
 input[type='radio'] {
@@ -27,4 +78,23 @@ input[type='radio'] {
     cursor: pointer;
     transition: color 200ms;
     
+}
+
+.blogpost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+
+.img {
+    width: 400px;
+    height: 400px;
+    box-shadow: lightgray;
+    border: solid 5px;
+    border-color: mediumaquamarine;
+    margin-top: 30px;
 }

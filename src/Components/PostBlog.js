@@ -41,7 +41,7 @@ class PostBlog extends Component {
         const {img, description, link, handle} = this.state
         return (
             <div>
-                <img src={img} alt='' />
+                <img className='img' src={img} alt='' />
                 <input type='text' placeholder='Image' name='img' onChange={this.handleChange} value={img} />
                 <input type='text' placeholder='Description' name='description' onChange={this.handleChange} value={description} />
                 <input type='text' placeholder='Link' name='link' onChange={this.handleChange} value={link} />
