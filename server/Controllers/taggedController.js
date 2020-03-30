@@ -14,7 +14,6 @@ const getMyPost = (req, res) => {
 }
 
 const postPost = (req, res) => {
-    console.log(req.body)
     const {img, description, link, handle} = req.body
     
     const newPost = {
@@ -36,7 +35,6 @@ const postPost = (req, res) => {
 const updatePost = (req, res) => {
     const id = req.params.id
     const {description, link, handle} = req.body
-    console.log(req.params)
     const blogIndex = myPost.findIndex(newPost => newPost.id === +id)
     myPost[blogIndex].description = description || myPost[blogIndex].description
     myPost[blogIndex].link = link || myPost[blogIndex].link
@@ -47,7 +45,6 @@ const updatePost = (req, res) => {
 
 const removePost = (req, res) => {
     const {id} = req.params
-    console.log(req.params)
     const removedIndex = myPost.findIndex(newPost => newPost.id === +id)
     myPost.splice(removedIndex, 1)
 

@@ -28,7 +28,6 @@ class MyPost extends Component {
     axios
       .get("/api/blog/myPost")
       .then(response => {
-        console.log(response.data);
         this.setState({
           myPost: response.data
         });
@@ -51,7 +50,6 @@ class MyPost extends Component {
   };
 
 deletePost = (id)=> {
-    console.log(id)
     axios
     .delete(`api/blog/${id}`)
     .then(response => {
@@ -72,30 +70,30 @@ deletePost = (id)=> {
               <h2>{val.description}</h2>
               <p>{val.link}</p>
               <p>{val.handle}</p>
-              <button onClick={this.changeAmendStatus}>Edit</button>
-              <button onClick={() => {this.deletePost(val.id)}}>Scratch</button>
+              <button className='mypostbuttons' id='save' onClick={this.changeAmendStatus}>Edit</button>
+              <button className='mypostbuttons' id='scratch' onClick={() => {this.deletePost(val.id)}}>Scratch</button>
               {
               this.state.amendStatus === true ? (
-                <section>
-                  <input
+                <section className='postblog'>
+                  <textarea className='postinput'
                     type="text"
                     placeholder="Description"
                     name="description"
                     onChange={this.handleChange}
                   />
-                   <input
+                   <input className='postinput'
                     type="text"
                     placeholder="Link"
                     name="link"
                     onChange={this.handleChange}
                   />
-                   <input
+                   <input className='postinput'
                     type="text"
                     placeholder="Handle"
                     name="handle"
                     onChange={this.handleChange}
                   />
-                  <button onClick={() => {this.updateBlogPost(val.id)}}>Save</button>
+                  <button className='mypostbuttons' id='save' onClick={() => {this.updateBlogPost(val.id)}}>Save</button>
                 </section>
               ) : null}
             </div>

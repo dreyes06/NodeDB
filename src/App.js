@@ -3,7 +3,7 @@ import Tagged from "./Components/Tagged";
 import ViewPost from "./Components/ViewPost";
 import PostBlog from "./Components/PostBlog";
 import MyPost from "./Components/MyPost";
-import "./App.css";
+import "./App.scss";
 
 class App extends Component {
   constructor() {
@@ -23,10 +23,10 @@ class App extends Component {
               <div className='navbar' >
                 <h1 className='currentpage' >Public Space</h1>
                 <nav className='buttonsnav'>
-                <button className='navbuttons' onClick={() => this.setState({ view: "inspire" })}>
+                <button className='navbuttons' id='save' onClick={() => this.setState({ view: "inspire" })}>
                   Inspire
                 </button>
-                <button className='navbuttons' onClick={() => this.setState({ view: "my post" })}>
+                <button className='navbuttons' id='save'  onClick={() => this.setState({ view: "my post" })}>
                   My post
                 </button>
                 </nav>
@@ -36,10 +36,10 @@ class App extends Component {
               <div className='navbar' >
                 <h1 className='currentpage' >Inspire</h1>
                 <nav className='buttonsnav' >
-                <button className='navbuttons' onClick={() => this.setState({ view: "public space" })}>
+                <button className='navbuttons' id='save'  onClick={() => this.setState({ view: "public space" })}>
                   Public Space
                 </button>
-                <button className='navbuttons' onClick={() => this.setState({ view: "my post" })}>
+                <button className='navbuttons' id='save'  onClick={() => this.setState({ view: "my post" })}>
                   My post
                 </button>
                 </nav>
@@ -49,10 +49,10 @@ class App extends Component {
               <div className='navbar'>
                 <h1 className='currentpage'  >My Post</h1>
                 <nav className='buttonsnav' >
-                <button className='navbuttons' onClick={() => this.setState({ view: "public space" })}>
+                <button className='navbuttons' id='save'  onClick={() => this.setState({ view: "public space" })}>
                   Public Space
                 </button>
-                <button className='navbuttons' onClick={() => this.setState({ view: "inspire" })}>
+                <button className='navbuttons' id='save'  onClick={() => this.setState({ view: "inspire" })}>
                   Inspire
                 </button>
                 </nav>

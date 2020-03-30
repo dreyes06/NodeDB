@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Blog from "./Blog";
 import axios from "axios";
 import MyPost from "./MyPost";
+import '../App.scss'
+
 
 class ViewPost extends Component {
   constructor() {
@@ -38,9 +40,9 @@ class ViewPost extends Component {
         return (
           <div className='blogpost' >
           <img className='img' src={val.img} alt="product" />
-          <h2>{val.description}</h2>
-          <h3>{val.link}</h3>
-          <p>{val.handle}</p>
+          <h2 className='text' id='newtext' >{val.description}</h2>
+          <h3 className='text'>{val.link}</h3>
+          <p className='text'>{val.handle}</p>
         </div>
       );
     });

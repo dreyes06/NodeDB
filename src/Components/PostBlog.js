@@ -29,7 +29,7 @@ class PostBlog extends Component {
             img: '',
             description: '',
             link: '',
-            description: ''
+            handle: ''
         })
     }).catch(error => {
         console.log(error)
@@ -40,13 +40,13 @@ class PostBlog extends Component {
     render() {
         const {img, description, link, handle} = this.state
         return (
-            <div>
+            <div className='postblog'>
                 <img className='img' src={img} alt='' />
-                <input type='text' placeholder='Image' name='img' onChange={this.handleChange} value={img} />
-                <input type='text' placeholder='Description' name='description' onChange={this.handleChange} value={description} />
-                <input type='text' placeholder='Link' name='link' onChange={this.handleChange} value={link} />
-                <input type='text' placeholder='Platform: Handle' name='handle' onChange={this.handleChange} value={handle} /> 
-                <button onClick={this.handleClick} >Create</button>
+                <input className='postinput' type='text' placeholder='Image' name='img' onChange={this.handleChange} value={img} />
+                <textarea className='postinput' id='description' type='text' placeholder='Description' name='description' onChange={this.handleChange} value={description} />
+                <input className='postinput' type='text' placeholder='Link' name='link' onChange={this.handleChange} value={link} />
+                <input className='postinput' type='text' placeholder='Platform: Handle' name='handle' onChange={this.handleChange} value={handle} /> 
+                <button className='mypostbuttons' id='save' onClick={this.handleClick} >Create</button>
             </div>
         )
     }

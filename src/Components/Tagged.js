@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import taggedLogo from '../Assets/taggedLogo.png'
-import '../App.css'
+import '../App.scss'
 
 function Tagged() {
   return (
