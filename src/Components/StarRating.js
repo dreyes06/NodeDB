@@ -11,10 +11,10 @@ const StarRating = () => {
                     const ratingValue = i + 1
 
 
-                    return <labbel>
+                    return <label>
                         <input type='radio' name='rating' value={ratingValue}  />
                         <FaTag className='tag' onClick={() =>setRating(ratingValue)}  onMouseEnter={() => setHover(ratingValue)} onMouseLeave={() => setHover(null)} color={ratingValue <= (hover || rating) ? '#66cdaa' : '#d3d3d3' } />
-                        </labbel>
+                        </label>
                 })}
                 <p>Rated {rating}/5 Tags</p>
             </div>
